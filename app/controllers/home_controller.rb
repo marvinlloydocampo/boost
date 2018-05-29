@@ -1,8 +1,10 @@
 class HomeController < ApplicationController
   def index
+      return unless params['constant'].present?
       @cipher = params["cipher"]
       @encryptedtext = params["encrypted_text"]
       @originaltext = decipher(params)
+      
   end
   
   def decipher(params)
