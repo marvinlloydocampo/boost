@@ -4,7 +4,6 @@ class HomeController < ApplicationController
       @cipher = params["cipher"]
       @encryptedtext = params["encrypted_text"]
       @originaltext = decipher(params)
-      
   end
   
   def decipher(params)
