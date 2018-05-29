@@ -1,0 +1,24 @@
+<h2>Cipher Forms</h2>
+
+<form action="index">
+  CONSTANT:
+  <br>
+  <input type="text" name="constant" value="abcdefghijklmnopqrstuvwxyz" readonly>
+  <br>
+  Cipher:
+  <br>
+  <input type="text" name="cipher" value="<%= @cipher %>">
+  <br>
+  Encrypted Text:
+  <br>
+  <input type="text" name="encrypted_text" value="<%= @encryptedtext %>">
+  <br>
+  Original Text:
+  <br>
+  <input type="text" name="original_text" value="<%= @originaltext %>" readonly>
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p><%= @error_message %></p>
